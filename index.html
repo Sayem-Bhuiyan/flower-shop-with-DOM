@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="mt-14">
+        <h1 class="text-4xl font-semibold text-center">Flower Shop</h1>
+        <div class="flex flex-col md:flex-row gap-10 p-10">
+            <div class="card w-60 bg-base-100 shadow-xl">
+                <figure><img class="w-60 h-52" src="Images/images (1).jfif" alt="Shoes" /></figure>
+                <div class="space-y-2 p-2">
+                  <h2 id="card-1-title" class="card-title">Sun Flower</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                  <h2 class="font-semibold">Price: <span id="card-1-price">50</span> $</h2>
+                  <button onclick="clickHandler('card-1-title', 'card-1-price')" class="bg-[#ff0000cb] text-white font-medium px-3 py-2 rounded-lg">ADD TO CART</button>
+                </div>
+            </div>
+
+            <div class="card w-60 bg-base-100 shadow-xl">
+                <figure><img class="w-60 h-52" src="Images/images (2).jfif" alt="Shoes" /></figure>
+                <div id="card-2" class="space-y-2 p-2">
+                  <h2 id="card-2-title" class="card-title">White Rose</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                  <h2 class="font-semibold">Price: <span id="card-2-price">30</span> $</h2>
+                  <button onclick="clickHandler('card-2-title', 'card-2-price')" id="btn2" class="bg-[#ff0000cb] text-white font-medium px-3 py-2 rounded-lg">ADD TO CART</button>
+                </div>
+            </div>
+
+            <div class="card w-60 bg-base-100 shadow-xl">
+                <figure><img class="w-60 h-52" src="Images/images.jfif" alt="Shoes" /></figure>
+                <div id="card-3" class="space-y-2 p-2">
+                  <h2 id="card-3-title" class="card-title">Red Rose</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                  <h2 class="font-semibold">Price: <span id="card-3-price">100</span> $</h2>
+                  <button onclick="clickHandler('card-3-title', 'card-3-price')" class="bg-[#ff0000cb] text-white font-medium px-3 py-2 rounded-lg">ADD TO CART</button>
+                </div>
+            </div>
+
+            <div class="space-y-4 p-5"> 
+                <h2 class="text-xl font-medium">Item list: </h2>
+                <ul id="item-list">
+                </ul>
+                <p class="font-medium">Total: <span id="total">00</span></p>
+                <p class="font-medium">Discount: <span>30</span>%</p>
+                <h3 class="text-xl font-medium">Grand Total: <span id="discoun-total">00</span></h3>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
